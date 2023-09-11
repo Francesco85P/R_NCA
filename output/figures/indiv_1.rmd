@@ -1,0 +1,14 @@
+
+!LANDSCAPE
+
+
+#* Individual observed values vs. time curve - Log scale
+
+!FIG[scale:100,crop:true,ignoreCaption:true,repeatLegend:true](output/figures/indiv_1.pdf)
+{
+IQnca version: 1.3.0  
+Script: UNKNOWN  
+Output: output/figures/indiv_1.pdf  
+Execution date: 2023-09-11 13:52:11.739033
+}
+
