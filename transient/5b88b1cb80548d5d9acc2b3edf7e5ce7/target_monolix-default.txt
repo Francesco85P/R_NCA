@@ -1,0 +1,83 @@
+<MODEL>
+DESCRIPTION:
+ Author: name <email>
+
+ System Units:
+                
+   mass          [=] ?
+   volume        [=] ?
+   concentration [=] ?
+   time          [=] ?
+ #-------------#
+ | References  |
+ #-------------#
+
+ Common conversions
+
+ Half-life to rate:
+
+        ln(2)
+  kel = -----
+        thalf
+
+ Convert ng/ml to nM
+
+    ng   1000 ml        nmoles
+  X -- x ------- x --------------- = X/MW (KDA)
+    ml    1L       MW (KDA)*1000 ng
+ 
+ Convert from nM to ng/ml:
+
+ X nM  ===> X*MW(KDA) 
+ 
+ Converting dose in mpk to nmoles
+
+   mg            1e6 ng    1 nmole
+ X -- x BW(kg) x ------ x -----------------  =>  X*1e3*BW/MW
+   kg            1 mg      MW (KDA) * 1000
+
+
+ Converting dose in mpk to nM    
+
+   mg            1e6 ng    1 nmole             1
+ X -- x BW(kg) x ------ x ----------------- x ---  =>  X*1e3*BW/MW/Vp
+   kg            1 mg      MW (KDA) * 1000    V(L)
+
+ Define Sets
+
+ <SET:SETNAME>  E1; E2; E3
+ #-------------#
+ | Parameters  |
+ #-------------#
+
+ System parameters
+     name                   value               lower             upper    units   editable    grouping
+                                                bound             bound            
+
+
+
+
+INPUT:
+input = {PNAME}
+
+
+EQUATION:
+
+;-->Dynamic Secondary Parameters 
+SIMINT_TIME  = t 
+
+;-->ODEs 
+ddt_TMP    = (0.0)
+
+;-->Outputs 
+TMP_OBS     = 0.0
+
+
+OUTPUT:
+output = {TMP_OBS} 
+
+;odeType = stiff
+
+POPULATION:
+pop_{PNAME}        = {distribution=logNormal, median=1.0,         variance=0.1} 
+

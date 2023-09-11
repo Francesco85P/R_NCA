@@ -1,0 +1,19 @@
+2023-09-08 10:44:10 Ubiquity log init - R
+2023-09-08 10:44:10 Creating file: /home/francesco/Documents/DataAnalysis/Analisi_NCA/analysis_nca.R
+2023-09-08 10:46:09 
+2023-09-08 10:46:10 NCA results for pk_single_dose written to
+2023-09-08 10:46:10   Summary output:   ./output/pk_single_dose-nca_summary-pknca.csv
+2023-09-08 10:46:10   R objects:        ./output/pk_single_dose-nca_data.RData
+2023-09-08 10:46:10   PKNCA raw output: ./output/pk_single_dose-pknca_raw.csv
+2023-09-08 10:51:15 
+2023-09-08 10:51:15 Report initialized...
+2023-09-08 10:51:15   Name:     default
+2023-09-08 10:51:15   Type:     PowerPoint
+2023-09-08 10:51:15   Template: /home/francesco/R/x86_64-pc-linux-gnu-library/4.3/ubiquity/ubinc/templates/report.pptx
+2023-09-08 10:51:15   Mapping:  /home/francesco/R/x86_64-pc-linux-gnu-library/4.3/ubiquity/ubinc/templates/report.yaml
+2023-09-08 10:51:15 
+2023-09-08 10:51:15 Appending NCA results to report
+2023-09-08 10:51:15   Report:   default
+2023-09-08 10:51:15   Type:     PowerPoint
+2023-09-08 10:51:15   Analysis: pk_single_dose
+
